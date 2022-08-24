@@ -1,0 +1,18 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "projectId": "c6d31dc5-ece4-4a98-86ca-b363fb4cf6d7",
+  "sendCrashReports": "false",
+  "terraformProviders": [],
+  "terraformModules": [
+    {
+      "name": "terraform_gcp_organization_bootstrap",
+      "source": "github.com/GlueOps/terraform-gcp-organization-bootstrap.git?ref=disable-kms-protection"
+    }
+  ],
+  "codeMakerOutput": "imports",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}

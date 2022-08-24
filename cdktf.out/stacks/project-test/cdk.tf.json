@@ -1,0 +1,51 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "local",
+      "stackName": "project-test",
+      "version": "0.12.1"
+    },
+    "outputs": {
+    }
+  },
+  "locals": {
+    "projecttest_gcpfolderidoutput_C39139EB": "${module.projecttest_project_CB2F4973.gcp_folder_id}"
+  },
+  "module": {
+    "projecttest_project_CB2F4973": {
+      "//": {
+        "metadata": {
+          "path": "project-test/project",
+          "uniqueId": "projecttest_project_CB2F4973"
+        }
+      },
+      "admin_roles": [
+        "roles/owner",
+        "roles/resourcemanager.folderAdmin",
+        "roles/iam.serviceAccountUser",
+        "roles/logging.admin",
+        "roles/serviceusage.serviceUsageAdmin",
+        "roles/orgpolicy.policyAdmin",
+        "roles/servicemanagement.quotaAdmin",
+        "roles/resourcemanager.projectCreator"
+      ],
+      "admins": [
+        "user:venkata@example.com.com"
+      ],
+      "company_key": "venkat",
+      "environments": [
+        "test104"
+      ],
+      "gcp_billing_account_name": "My Billing Account",
+      "org_id": "11111111111",
+      "source": "github.com/GlueOps/terraform-gcp-organization-bootstrap.git?ref=disable-kms-protection"
+    }
+  },
+  "terraform": {
+    "backend": {
+      "local": {
+        "path": "/workspaces/glueops/terraform.project-test.tfstate"
+      }
+    }
+  }
+}
